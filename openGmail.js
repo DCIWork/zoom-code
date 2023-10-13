@@ -7,6 +7,7 @@ const text = document.getElementById("zoom-code")
 
 text.value = code
 text.focus()
+text.select()
 text.addEventListener("keydown", checkForEnter)
 
 function checkForEnter(event) {
