@@ -5,33 +5,73 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 5vw;
+  font-family: sans-serif;
   background-color: #222;
 }
 
-div {
-  height: 2.5em;
+main {
+  height: 3.5em;
 }
 
-button, input {
-  font-size: inherit;
+button, div {
+  position: relative;
+  display: inline-block;
   height: 100%;
-  padding: 1vw 2vw;
   vertical-align: middle;
-  box-sizing: content-box;
-  border: 0.5vw outset #999;
-  border-radius: 2vw;
-  background-color: #000;
-  color: #ccc;
 }
 
-input {
-  font-size: 2em;
-  width: 1.5em;
-  text-align: right;
-  border-style: inset;
-  color: #0b0;
+button, input, label, select {
+  font-size: inherit;
+  font-family: inherit;
+  color: #ccc;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0 2vw;
 }
 
 button:hover {
   color: #fff
+}
+
+button, input {
+  border: 0.5vw outset #999;
+  border-radius: 2vw;
+  background-color: #000;
+}
+
+label, input {
+  width: 20vw;
+}
+
+input, select {
+  text-align: right;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  font-size: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+label.hidden ~ input {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  font-size: 2em;
+  padding-top: 0.5vw;
+  border-style: inset;
+  color: #0b0;
 }
