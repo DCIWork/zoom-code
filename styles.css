@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  background-color: #222;
+}
+
+div {
+  height: 2.5em;
+}
+
+button, input {
+  font-size: inherit;
+  height: 100%;
+  padding: 1vw 2vw;
+  vertical-align: middle;
+  box-sizing: content-box;
+  border: 0.5vw outset #999;
+  border-radius: 2vw;
+  background-color: #000;
+  color: #ccc;
+}
+
+input {
+  font-size: 2em;
+  width: 1.5em;
+  text-align: right;
+  border-style: inset;
+}
+
+button:hover {
+  color: #fff
+}
