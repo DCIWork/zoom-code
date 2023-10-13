@@ -29,6 +29,7 @@ input {
   width: 1.5em;
   text-align: right;
   border-style: inset;
+  color: #0b0;
 }
 
 button:hover {
